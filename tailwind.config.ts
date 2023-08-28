@@ -14,7 +14,7 @@ const config: Config = {
         'light': '#F1F1F1',
         'very-light': '#FAFAFA',
         'secondary': '#fbaf85',
-      }
+      },
     },
   },
   plugins: [],          
