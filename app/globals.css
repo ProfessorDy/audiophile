@@ -19,10 +19,10 @@
   }
 
   .primary-btn {
-    @apply w-fit text-center uppercase text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-primary sm:hover:bg-secondary;
+    @apply w-fit text-center block uppercase text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-primary sm:hover:bg-secondary;
   }
 
   .secondary-btn {
-    @apply w-fit text-center  uppercase text-black sm:hover:text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-white sm:hover:bg-black;
+    @apply w-fit text-center block  uppercase text-black sm:hover:text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-white sm:hover:bg-black;
   }
 }
