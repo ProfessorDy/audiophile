@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Summary from '@/components/Summary'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         {children}
         <Summary />
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   )

@@ -9,7 +9,7 @@ export default function HeroText() {
                 <p className="normal-case text-[0.9375rem] font-medium leading-[1.5625rem] opacity-75 mt-6 sm:max-w-[21.8125rem] sm:mx-auto lg:mx-0">
                     Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
-                <Link href='./headphones#xx99' className="primary-btn mx-auto lg:mx-0 mt-7 sm:mt-10">see products</Link>
+                <Link href='./headphones#xx99' className="primary-btn mx-auto lg:mx-0 mt-7 sm:mt-10 ">see products</Link>
             </section>
         </>
     )

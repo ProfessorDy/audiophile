@@ -17,6 +17,9 @@ const config: Config = {
         'secondary': '#fbaf85',
         'span': '#D87D4A',
       },
+      backgroundImage : {
+        'pattern': "url('../public/home/desktop/pattern-circles.svg')"
+      },
     },
   },
   plugins: [],          
