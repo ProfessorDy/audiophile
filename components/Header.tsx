@@ -17,7 +17,7 @@ import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import BgOverlay from './BgOverlay'
-import HeroText from './HeroText'
+
 
 export default function Header() {
     const currentRoute: string = usePathname();

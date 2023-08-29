@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function ImageLink({ src, category, width, height, handleClick }: { src: StaticImageData, category: string, width: number, height: number, handleClick: any }) {
     return (
 
-        <Link href={`/${category}`} onClick={handleClick} className='bg-light text-black text-center uppercase rounded-lg relative pt-[5.5rem] pb-[22px] font-bold w-full max-w-md mx-auto'>
+        <Link href={`/${category}`} onClick={handleClick} className='bg-light text-black text-center uppercase rounded-lg relative pt-[5.5rem] pb-[22px] font-bold w-full max-w-md mx-auto hover:translate-y-4 transition-all hover:animate-pulse'>
             <Image className='absolute -top-4 left-1/2 transform -translate-x-1/2 '
                 src={src}
                 alt={`${category}`}

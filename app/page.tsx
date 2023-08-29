@@ -8,6 +8,7 @@ import HeroText from '@/components/HeroText'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 export default function Home() {
   return (
     <main className="">
@@ -20,8 +21,11 @@ export default function Home() {
           <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={null} />
         </nav>
         <div className="wrapper">3 products</div>
-        <div className="wrapper">summary card</div>
+
+
       </section>
+
+
 
     </main>
   )

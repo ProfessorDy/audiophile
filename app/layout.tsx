@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
 import Footer from '@/components/Footer'
+import Summary from '@/components/Summary'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={manrope.className}>
         <Header />
         {children}
+        <Summary />
         <Footer />
       </body>
     </html>
