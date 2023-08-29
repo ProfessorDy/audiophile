@@ -17,4 +17,12 @@
   .active_underline {
     @apply after:content-[''] after:h-[2px] after:w-1/3 after:bg-primary after:absolute after:bottom-[-4px] after:left-0;
   }
+
+  .primary-btn {
+    @apply w-fit text-center uppercase text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-primary sm:hover:bg-secondary;
+  }
+
+  .secondary-btn {
+    @apply w-fit text-center  uppercase text-black sm:hover:text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] bg-white sm:hover:bg-black;
+  }
 }
