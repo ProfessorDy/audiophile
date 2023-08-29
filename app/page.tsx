@@ -33,9 +33,9 @@ export default function Home() {
           <ImageLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={null} />
           <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={null} />
         </nav>
-        <section className="wrapper gap-y-4 sm:gap-y-8 lg:gap-y-16">
+        <section className="wrapper space-y-4 sm:space-y-8 lg:space-y-16">
           {/* ZX9 SPEAKER */}
-          <div className='bg-primary px-6 py-14 sm:py-16  bg-pattern bg-no-repeat bg-center rounded-lg'>
+          <div className='bg-primary px-6 pt-[3.25rem] pb-[3.25rem] sm:pt-16  sm:pb-16 lg:pb-0 lg:pt-24 bg-pattern bg-no-repeat bg-center rounded-lg lg:flex justify-between lg:px-24'>
             <Image
               src={zx9SpeakerMobile}
               alt='zx9 speaker'
@@ -44,18 +44,18 @@ export default function Home() {
             <Image
               src={zx9SpeakerTablet}
               alt='zx9 speaker'
-              className='max-sm:hidden lg:hidden'
+              className='max-sm:hidden lg:hidden w-[12.32575rem] mx-auto '
             />
             <Image
               src={zx9SpeakerDesktop}
               alt='zx9 speaker'
-              className='max-lg:hidden'
+              className='max-lg:hidden w-[25.63963rem]'
             />
 
-            <div className='text-white text-center space-y-6 mt-8'>
-              <h2 className='text-4xl sm:text-[3.5rem] font-bold sm:leading-[3.625rem] tracking-[0.08038rem] sm:tracking-[0.125rem] uppercase'>zx9 speaker</h2>
-              <p className='text-[0.9375rem] font-medium leading-[1.5625rem] opacity-75 '>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-              <Link href='/speakers#zx9' className="secondary-btn mx-auto">see product</Link>
+            <div className='text-white max-lg:text-center  mt-8 sm:mt-16'>
+              <h2 className='text-4xl sm:text-[3.5rem] font-bold sm:leading-[3.625rem] tracking-[0.08038rem] sm:tracking-[0.125rem] uppercase'>zx9<br />speaker</h2>
+              <p className='mt-6 text-[0.9375rem] font-medium leading-[1.5625rem] opacity-75 max-w-[21.8125rem] max-lg:mx-auto '>Upgrade to premium speakers that are <br /> phenomenally built to deliver truly remarkable sound.</p>
+              <Link href='/speakers#zx9' className="secondary-btn max-lg:mx-auto mt-6 sm:mt-10">see product</Link>
             </div>
 
 
