@@ -1,6 +1,6 @@
 'use client'
 
-import MobileLink from './MobileLink'
+import ImageLink from './ImageLink'
 import Hero from './Hero'
 
 import Hamburger from '@/public/shared/mobile/icon-hamburger.svg'
@@ -49,11 +49,11 @@ export default function Header() {
 
                         {/* Mobile  Navigation */}
                         <nav className='z-20' aria-hidden={menuState ? 'false' : 'true'}>
-                            <motion.ul animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-[90px] bg-white h-screen px-6 pt-[84px] pb-[35px] w-full lg:hidden space-y-[68px]`} >
-                                <MobileLink src={headphoneThumbnail} category='headphones' width={119.874} height={156} handleClick={handleClick} />
-                                <MobileLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={handleClick} />
-                                <MobileLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={handleClick} />
-                            </motion.ul>
+                            <motion.div animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-[90px] bg-white h-4/5 px-6 pt-16 pb-[35px] w-full lg:hidden grid gap-12`} >
+                                <ImageLink src={headphoneThumbnail} category='headphones' width={119.874} height={156} handleClick={handleClick} />
+                                <ImageLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={handleClick} />
+                                <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={handleClick} />
+                            </motion.div>
                         </nav>
                         {/* Desktop Navigation */}
                         <nav className='max-lg:hidden flex ml-auto' aria-label='main'>
