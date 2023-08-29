@@ -59,16 +59,16 @@ export default function Header() {
                         <nav className='max-lg:hidden flex ml-auto' aria-label='main'>
                             <ul className='flex gap-[2.12rem] text-[0.8125rem] font-bold  leading-[1.5625rem]'>
                                 <li>
-                                    <Link href='/' className={`${currentRoute === '/' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative`}>home</Link>
+                                    <Link href='/' className={`${currentRoute === '/' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative transition-colors duration-500`}>home</Link>
                                 </li>
                                 <li>
-                                    <Link href='/headphones' className={`${currentRoute === '/headphones' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative`}>headphones</Link>
+                                    <Link href='/headphones' className={`${currentRoute === '/headphones' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative transition-colors duration-500`}>headphones</Link>
                                 </li>
                                 <li>
-                                    <Link href='/speakers' className={`${currentRoute === '/speakers' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative`}>speakers</Link>
+                                    <Link href='/speakers' className={`${currentRoute === '/speakers' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative transition-colors duration-500`}>speakers</Link>
                                 </li>
                                 <li>
-                                    <Link href='/earphones' className={`${currentRoute === '/earphones' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative`}>earphones</Link>
+                                    <Link href='/earphones' className={`${currentRoute === '/earphones' ? 'text-primary active_underline' : ''} hover:text-primary hover:active_underline relative transition-colors duration-500`}>earphones</Link>
                                 </li>
                             </ul>
                         </nav>

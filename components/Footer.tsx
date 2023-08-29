@@ -21,16 +21,16 @@ export default function Footer() {
 
                 <nav className="">
                     <ul className="lg:absolute top-0 right-0 text-[0.8125rem] font-bold leading-[1.5625rem] tracking-[0.125rem] uppercase flex gap-4 max-sm:flex-col sm:gap-[2.12rem] ">
-                        <li className="sm:hover:text-primary">
+                        <li className="sm:hover:text-primary transition-colors duration-500">
                             <Link href='/'>home</Link>
                         </li>
-                        <li className="sm:hover:text-primary">
+                        <li className="sm:hover:text-primary transition-colors duration-500">
                             <Link href='/headphones'>headphones</Link>
                         </li>
-                        <li className="sm:hover:text-primary">
+                        <li className="sm:hover:text-primary transition-colors duration-500">
                             <Link href='/speakers'>speakers</Link>
                         </li>
-                        <li className="sm:hover:text-primary">
+                        <li className="sm:hover:text-primary transition-colors duration-500">
                             <Link href='/earphones'>earphones</Link>
                         </li>
                     </ul>
