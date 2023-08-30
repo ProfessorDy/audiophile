@@ -14,7 +14,7 @@ export default function Hero() {
                     <p className="normal-case text-[0.9375rem] font-medium leading-[1.5625rem] opacity-75 mt-6  sm:mx-auto lg:mx-0">
                         Experience natural, lifelike audio and exceptional <br className='max-sm:hidden' />  quality made for the passionate music <br className='max-sm:hidden' /> enthusiast.
                     </p>
-                    <Link href='./headphones#xx99' className="primary-btn mx-auto lg:mx-0 mt-7 sm:mt-10 ">see products</Link>
+                    <Link href='./headphones/xx99-mark-two' className="primary-btn mx-auto lg:mx-0 mt-7 sm:mt-10 ">see products</Link>
                 </section>
             </div>
 

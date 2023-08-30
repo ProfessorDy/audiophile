@@ -9,15 +9,23 @@ import ImageLinks from "@/components/ImageLinks"
 import SubHero from "@/components/SubHero"
 import Product from "@/components/Product"
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Speakers",
+}
+
+
 export default function Speakers() {
     return (
         <>
+
             <SubHero />
             <main className="padding-x">
                 <div className="wrapper space-y-[7.5rem] lg:space-y-40">
                     <Product imageMobile={zx9Mobile} imageTablet={zx9Tablet} imageDesktop={zx9Desktop} name="zx9" details="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups." route="zx9" invert={false} newProduct={true} />
 
-                    <Product imageMobile={zx7Mobile} imageTablet={zx7Tablet} imageDesktop={zx7Desktop} name="xx99 mark ii" details="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound." route="zx7" invert={true} newProduct={false} />
+                    <Product imageMobile={zx7Mobile} imageTablet={zx7Tablet} imageDesktop={zx7Desktop} name="zx7" details="Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use." route="zx7" invert={true} newProduct={false} />
 
                 </div>
                 <ImageLinks />

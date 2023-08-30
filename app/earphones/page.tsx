@@ -6,6 +6,13 @@ import ImageLinks from "@/components/ImageLinks";
 import SubHero from "@/components/SubHero";
 import Product from "@/components/Product";
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Earphones",
+}
+
+
 export default function Earphones() {
     return (
         <>

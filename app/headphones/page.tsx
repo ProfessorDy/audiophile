@@ -11,8 +11,11 @@ import xx59Mobile from '@/public/product-xx59-headphones/mobile/image-category-p
 import xx59Tablet from '@/public/product-xx59-headphones/tablet/image-category-page-preview.jpg'
 import xx59Desktop from '@/public/product-xx59-headphones/desktop/image-category-page-preview.jpg'
 
+import type { Metadata } from 'next'
 
-
+export const metadata: Metadata = {
+    title: "Headphones",
+}
 
 export default function Headphones() {
     return (
@@ -21,7 +24,7 @@ export default function Headphones() {
             <main className="padding-x">
                 <div className="wrapper space-y-[7.5rem] lg:space-y-40">
                     <Product imageMobile={mark2Mobile} imageTablet={mark2Tablet} imageDesktop={mark2Desktop} name="xx99 mark ii" details="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound." route="xx99-mark-two" invert={false} newProduct={true} />
-                    <Product imageMobile={mark1Mobile} imageTablet={mark1Tablet} imageDesktop={mark1Desktop} name="xx99 mark ii" details="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound." route="xx99-mark-one" invert={true} newProduct={false} />
+                    <Product imageMobile={mark1Mobile} imageTablet={mark1Tablet} imageDesktop={mark1Desktop} name="xx99 mark i" details="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go." route="xx99-mark-one" invert={true} newProduct={false} />
 
                     <Product imageMobile={xx59Mobile} imageTablet={xx59Tablet} imageDesktop={xx59Desktop} name="xx59" details="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move." route="xx59" invert={false} newProduct={false} />
 
