@@ -21,7 +21,7 @@ export default function Home() {
     <main className="">
       <Hero />
 
-      <section className="padding-x pb-[12.5rem]  bg-very-light min-h-screen">
+      <section className="padding-x lg:pb-[12.5rem]  bg-very-light min-h-screen">
         <ImageLinks />
 
         <section className="wrapper space-y-4 sm:space-y-8 lg:space-y-16">
