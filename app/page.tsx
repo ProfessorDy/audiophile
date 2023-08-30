@@ -1,7 +1,4 @@
 
-import headphoneThumbnail from '@/public/shared/desktop/image-category-thumbnail-headphones.png'
-import speakerThumbnail from '@/public/shared/desktop/image-category-thumbnail-speakers.png'
-import earphoneThumbnail from '@/public/shared/desktop/image-category-thumbnail-earphones.png'
 import zx9SpeakerMobile from '@/public/home/mobile/image-speaker-zx9.png'
 import zx9SpeakerTablet from '@/public/home/tablet/image-speaker-zx9.png'
 import zx9SpeakerDesktop from '@/public/home/desktop/image-speaker-zx9.png'
@@ -13,10 +10,10 @@ import yx1EarphonesDesktop from '@/public/home/desktop/image-earphones-yx1.jpg'
 
 
 
-import ImageLink from '@/components/ImageLink'
 import HeroText from '@/components/HeroText'
 import Image from 'next/image'
 import Link from 'next/link'
+import ImageLinks from '@/components/ImageLinks'
 
 
 export default function Home() {
@@ -25,11 +22,8 @@ export default function Home() {
       <HeroText />
 
       <section className="padding-x  bg-very-light min-h-screen">
-        <nav className="wrapper grid max-sm:gap-[4.25rem] sm:gap-[0.62rem] lg:gap-[1.87rem] sm:grid-cols-3 pt-[5.5rem] pb-[7.38rem] sm:pt-24 sm:pb-24">
-          <ImageLink src={headphoneThumbnail} category='headphones' width={119.874} height={156} handleClick={null} />
-          <ImageLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={null} />
-          <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={null} />
-        </nav>
+        <ImageLinks />
+
         <section className="wrapper space-y-4 sm:space-y-8 lg:space-y-16">
           {/* ZX9 SPEAKER */}
           <div className='bg-primary px-6 pt-[3.25rem] pb-[3.25rem] sm:pt-16  sm:pb-16 lg:pb-0 lg:pt-24 bg-pattern bg-no-repeat bg-center rounded-lg lg:flex justify-between lg:px-24'>
