@@ -62,18 +62,18 @@ export default function Home() {
           <div className='py-[6.31rem] px-6 sm:px-16 lg:px-24 rounded-lg bg-zx7-mobile sm:bg-zx7-tablet lg:bg-zx7-desktop lg:sm:bg-zx7-desktop bg-no-repeat bg-cover'>
 
             <div className='space-y-8 '>
-              <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]  '>zx7 speaker</h2>
+              <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]'>zx7 speaker</h2>
               <Link href='/speakers#zx7' className='secondary-btn-inverted'>see product</Link>
             </div>
 
           </div>
 
           {/* YX1 EARPHONES */}
-          <div>
+          <div className='grid gap-6 sm:grid-cols-2 sm:gap-[0.69rem] lg:gap-[1.88rem]'>
             <Image
               src={yx1EarphonesMobile}
               alt='yx1 Earphone'
-              className='sm:hidden'
+              className='sm:hidden rounded-lg'
             />
             <Image
               src={yx1EarphonesTablet}
@@ -85,6 +85,11 @@ export default function Home() {
               alt='yx1 Earphone'
               className='max-lg:hidden'
             />
+
+            <div className='rounded-lg px-6 lg:px-24  py-[2.56rem]  sm:py-[6.31rem] bg-light space-y-8'>
+              <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]'>yx1 earphones</h2>
+              <Link href='/earphones#yx1' className='secondary-btn-inverted'>see product</Link>
+            </div>
           </div>
         </section>
 

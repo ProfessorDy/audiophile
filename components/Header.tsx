@@ -49,7 +49,7 @@ export default function Header() {
 
                         {/* Mobile  Navigation */}
                         <nav className='z-20' aria-hidden={menuState ? 'false' : 'true'}>
-                            <motion.div animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-[90px] bg-white h-4/5 px-6 pt-16 pb-[35px] w-full lg:hidden grid gap-8 items-start content-center`} >
+                            <motion.div animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-[90px] bg-white h-full sm:h-auto sm:flex px-6 pt-16 pb-[35px] w-full lg:hidden grid gap-8 items-start content-center`} >
                                 <ImageLink src={headphoneThumbnail} category='headphones' width={119.874} height={156} handleClick={handleClick} />
                                 <ImageLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={handleClick} />
                                 <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={handleClick} />
