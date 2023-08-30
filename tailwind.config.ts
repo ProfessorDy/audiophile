@@ -18,7 +18,10 @@ const config: Config = {
         'span': '#D87D4A',
       },
       backgroundImage : {
-        'pattern': "url('../public/home/desktop/pattern-circles.svg')"
+        'pattern': "url('../public/home/desktop/pattern-circles.svg')",
+        'zx7-mobile': "url('../public/home/mobile/image-speaker-zx7.jpg')",
+        'zx7-tablet': "url('../public/home/tablet/image-speaker-zx7.jpg')",
+        'zx7-desktop': "url('../public/home/desktop/image-speaker-zx7.jpg')",
       },
     },
   },

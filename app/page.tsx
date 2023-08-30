@@ -5,9 +5,6 @@ import earphoneThumbnail from '@/public/shared/desktop/image-category-thumbnail-
 import zx9SpeakerMobile from '@/public/home/mobile/image-speaker-zx9.png'
 import zx9SpeakerTablet from '@/public/home/tablet/image-speaker-zx9.png'
 import zx9SpeakerDesktop from '@/public/home/desktop/image-speaker-zx9.png'
-import zx7SpeakerMobile from '@/public/home/mobile/image-speaker-zx7.jpg'
-import zx7SpeakerTablet from '@/public/home/tablet/image-speaker-zx9.png'
-import zx7SpeakerDesktop from '@/public/home/desktop/image-speaker-zx7.jpg'
 import yx1EarphonesMobile from '@/public/home/mobile/image-earphones-yx1.jpg'
 import yx1EarphonesTablet from '@/public/home/tablet/image-earphones-yx1.jpg'
 import yx1EarphonesDesktop from '@/public/home/desktop/image-earphones-yx1.jpg'
@@ -62,22 +59,12 @@ export default function Home() {
           </div>
 
           {/* ZX7 SPEAKER */}
-          <div >
-            <Image
-              src={zx7SpeakerMobile}
-              alt='zx7 speaker'
-              className='sm:hidden'
-            />
-            <Image
-              src={zx7SpeakerTablet}
-              alt='zx7 speaker'
-              className='max-sm:hidden lg:hidden'
-            />
-            <Image
-              src={zx7SpeakerDesktop}
-              alt='zx7 speaker'
-              className='max-lg:hidden'
-            />
+          <div className='py-[6.31rem] px-6 sm:px-16 lg:px-24 rounded-lg bg-zx7-mobile sm:bg-zx7-tablet lg:bg-zx7-desktop lg:sm:bg-zx7-desktop bg-no-repeat bg-cover'>
+
+            <div className='space-y-8 '>
+              <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]  '>zx7 speaker</h2>
+              <Link href='/speakers#zx7' className='secondary-btn-inverted'>see product</Link>
+            </div>
 
           </div>
 

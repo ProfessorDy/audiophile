@@ -25,4 +25,8 @@
   .secondary-btn {
     @apply w-fit text-center block  uppercase sm:hover:text-black text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] border border-black sm:hover:bg-white bg-black transition-colors duration-500;
   }
+
+  .secondary-btn-inverted {
+    @apply w-fit text-center block  uppercase text-black sm:hover:text-white text-[0.8125rem] font-bold tracking-[0.0625rem] px-[1.905rem] py-[0.94rem] border border-black bg-transparent sm:hover:bg-black transition-colors duration-500;
+  }
 }
