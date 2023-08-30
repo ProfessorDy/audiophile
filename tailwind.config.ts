@@ -18,6 +18,9 @@ const config: Config = {
         'span': '#D87D4A',
       },
       backgroundImage : {
+        'hero-mobile': "url('../public/home/mobile/image-header.jpg')",
+        'hero-tablet': "url('../public/home/tablet/image-header.jpg')",
+        'hero-desktop': "url('../public/home/desktop/image-hero.jpg')",
         'pattern': "url('../public/home/desktop/pattern-circles.svg')",
         'zx7-mobile': "url('../public/home/mobile/image-speaker-zx7.jpg')",
         'zx7-tablet': "url('../public/home/tablet/image-speaker-zx7.jpg')",

@@ -12,7 +12,7 @@ export default function ScrollToTopButton() {
     }
 
     return (
-        <motion.button className="fixed shadow-xl z-50 bottom-4 right-6   p-3 bg-primary hover:bg-secondary transition-colors duration-300 text-white rounded-full" onClick={scrollToTop}
+        <motion.button className="fixed shadow-xl z-50 bottom-4 right-[5vw]   p-3 bg-primary hover:bg-secondary transition-colors duration-300 text-white rounded-full" onClick={scrollToTop}
             whileHover={{ scale: 1.3 }}
             whileTap={{ scale: 1.1 }}>
             <FaArrowUp />

@@ -10,7 +10,7 @@ import yx1EarphonesDesktop from '@/public/home/desktop/image-earphones-yx1.jpg'
 
 
 
-import HeroText from '@/components/HeroText'
+import Hero from '@/components/Hero'
 import Image from 'next/image'
 import Link from 'next/link'
 import ImageLinks from '@/components/ImageLinks'
@@ -19,9 +19,9 @@ import ImageLinks from '@/components/ImageLinks'
 export default function Home() {
   return (
     <main className="">
-      <HeroText />
+      <Hero />
 
-      <section className="padding-x  bg-very-light min-h-screen">
+      <section className="padding-x pb-[12.5rem]  bg-very-light min-h-screen">
         <ImageLinks />
 
         <section className="wrapper space-y-4 sm:space-y-8 lg:space-y-16">

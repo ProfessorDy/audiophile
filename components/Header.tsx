@@ -29,8 +29,7 @@ export default function Header() {
 
     return (
         <>
-            {currentRoute === '/' ? <BgOverlay /> : undefined}
-            {currentRoute === '/' ? <Hero /> : undefined}
+
             <header className='sticky top-0 bg-hero z-10  padding-x pt-8 lg:pt-9 text-white uppercase'>
 
                 <div className="wrapper relative">

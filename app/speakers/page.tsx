@@ -1,5 +1,10 @@
+import ImageLinks from "@/components/ImageLinks"
+
 export default function Speakers() {
     return (
-        <div>Speakers</div>
+        <main className="padding-x">
+
+            <ImageLinks />
+        </main>
     )
 }
