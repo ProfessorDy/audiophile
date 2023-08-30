@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function ImageLink({ src, category, width, height, handleClick }: { src: StaticImageData, category: string, width: number, height: number, handleClick: any }) {
     return (
 
-        <article className='bg-light text-black text-center uppercase rounded-lg relative pt-[5.5rem] pb-[22px] font-bold w-full max-w-md mx-auto hover:translate-y-4 transition-all hover:animate-pulse'>
+        <article className='bg-light text-black text-center uppercase rounded-lg relative pt-[5.5rem] pb-[22px] font-bold w-full max-w-md mx-auto hover:translate-y-4 transition-all '>
             <Image className='absolute -top-4 left-1/2 transform -translate-x-1/2 '
                 src={src}
                 alt={`${category}`}
@@ -15,7 +15,7 @@ export default function ImageLink({ src, category, width, height, handleClick }:
                 height={height} />
             <h2 className='mb-4 text-[15px] tracking-[1.071px]'>{category}</h2>
             <div className='flex items-center gap-3 justify-center'>
-                <Link href={`/${category}`} className=' opacity-50' onClick={handleClick}>
+                <Link href={`/${category}`} className=' opacity-50 hover:text-primary hover:opacity-100 ' onClick={handleClick}>
                     shop
                 </Link>
                 <Image
