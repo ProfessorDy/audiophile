@@ -36,7 +36,7 @@ export default function Footer() {
                     </ul>
                 </nav>
 
-                <p className="opacity-50 text-[0.9375rem] font-medium leading-[1.5625rem] max-w-[33.75rem]">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
+                <p className="opacity-50 text-[0.9375rem] font-medium leading-[1.5625rem] max-w-[33.75rem]">Audiophile is an all in one stop to fulfill your audio needs. We&apos;re a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we&apos;re open 7 days a week.</p>
 
                 <p className="opacity-50 text-[0.9375rem] font-bold leading-[1.5625rem] mt-5 ">Copyright {year}. All Rights Reserved</p>
 

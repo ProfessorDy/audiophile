@@ -29,8 +29,9 @@ export default function Product({ imageMobile, imageTablet, imageDesktop, name, 
 
 
             <div className="max-lg:text-center max-sm:space-y-6 sm:max-w-[35.75rem] mx-auto">
-                <p className="text-primary text-[.875rem] tracking-[.625rem] uppercase font-normal sm:mb-4">{newProduct ? 'new product' : ''}</p>
-                <h2 className="text-black text-[1.75rem] sm:text-[2.5rem] sm:leading-[2.75rem] font-bold tracking-[.0625rem] sm:tracking-[0.08931rem] uppercase ">{name}<br />{currentRoute.slice(1)}</h2>
+                {newProduct ? (<p className="text-primary text-[.875rem] tracking-[.625rem] uppercase font-normal sm:mb-4">new product</p>) : null}
+
+                <h2 className="text-black text-[1.75rem] sm:text-[2.5rem] sm:leading-[2.75rem] font-bold tracking-[.0625rem] sm:tracking-[0.08931rem] uppercase">{name}<br />{currentRoute.slice(1)}</h2>
                 <p className="text-black text-[.9375rem] font-medium leading-[1.5625rem ] opacity-50 sm:mt-8">{details}</p>
                 <Link href={`${currentRoute}/${route}`} className='primary-btn max-lg:mx-auto sm:mt-8 lg:mt-10'>see product</Link>
             </div>
