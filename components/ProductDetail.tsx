@@ -5,6 +5,7 @@ import ImageLinks from "./ImageLinks"
 
 import Price from "@/app/price"
 import ProductInteraction from "./ProductInteraction"
+import Recommend from "./Recommend"
 
 export default function ProductDetail({ productMobile, productTablet, productDesktop, newProduct, product, category, details, price, featuresp1, featuresp2, galleryMobile1, galleryMobile2, galleryMobile3, galleryTablet1, galleryTablet2, galleryTablet3, galleryDesktop1, galleryDesktop2, galleryDesktop3 }: { productMobile: StaticImageData, productTablet: StaticImageData, productDesktop: StaticImageData, newProduct: boolean, product: string, category: string, details: string, price: number, featuresp1: string, featuresp2: string, galleryMobile1: StaticImageData, galleryMobile2: StaticImageData, galleryMobile3: StaticImageData, galleryTablet1: StaticImageData, galleryTablet2: StaticImageData, galleryTablet3: StaticImageData, galleryDesktop1: StaticImageData, galleryDesktop2: StaticImageData, galleryDesktop3: StaticImageData }) {
 
@@ -149,7 +150,7 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                 </div>
 
             </div >
-
+            <Recommend />
             <ImageLinks />
         </>
     )

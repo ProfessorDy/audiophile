@@ -14,6 +14,8 @@ export default function ProductInteraction() {
         setCount(prev => prev > 1 ? prev - 1 : prev)
     }
 
+    // Add functionality next
+
     return (
         <div className="flex gap-4">
             <div className="flex gap-5 p-[0.94rem] bg-light text-black uppercase font-bold text-[0.8125rem] tracking-[.0625rem]">
