@@ -16,7 +16,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import BgOverlay from './BgOverlay'
+
 
 
 export default function Header() {
@@ -48,7 +48,7 @@ export default function Header() {
 
                         {/* Mobile  Navigation */}
                         <nav className='z-40' aria-hidden={menuState ? 'false' : 'true'}>
-                            <motion.div animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-24 overflow-y-auto bg-white h-full sm:h-auto sm:flex px-6 pt-16 pb-[35px] w-full lg:hidden grid gap-8 items-start content-start`} >
+                            <motion.div animate={{ x: menuState ? 1025 : 0 }} className={`fixed left-[-1025px] top-20 overflow-y-auto bg-white h-full sm:h-auto sm:flex px-6 pt-16 pb-[35px] w-full lg:hidden grid gap-8 items-start content-start`} >
                                 <ImageLink src={headphoneThumbnail} category='headphones' width={119.874} height={156} handleClick={handleClick} />
                                 <ImageLink src={speakerThumbnail} category='speakers' width={126.006} height={151.5} handleClick={handleClick} />
                                 <ImageLink src={earphoneThumbnail} category='earphones' width={147} height={133} handleClick={handleClick} />
