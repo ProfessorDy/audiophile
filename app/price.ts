@@ -15,13 +15,13 @@ async function getData() {
     return res.json()
 }
 
-export default async function Price(usd: number) {
+export default async function Price(usd: number, display: boolean) {
     const data = await getData()
 
     const rate:number = data.rates.NGN * usd
 
     const value: number  = Math.trunc(rate)
 
-    return value.toLocaleString()
+    return display ? value.toLocaleString() : value
   
 }

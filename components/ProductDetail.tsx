@@ -7,7 +7,11 @@ import Price from "@/app/price"
 import ProductInteraction from "./ProductInteraction"
 import Recommend from "./Recommend"
 
-export default function ProductDetail({ productMobile, productTablet, productDesktop, newProduct, product, category, details, price, featuresp1, featuresp2, galleryMobile1, galleryMobile2, galleryMobile3, galleryTablet1, galleryTablet2, galleryTablet3, galleryDesktop1, galleryDesktop2, galleryDesktop3 }: { productMobile: StaticImageData, productTablet: StaticImageData, productDesktop: StaticImageData, newProduct: boolean, product: string, category: string, details: string, price: number, featuresp1: string, featuresp2: string, galleryMobile1: StaticImageData, galleryMobile2: StaticImageData, galleryMobile3: StaticImageData, galleryTablet1: StaticImageData, galleryTablet2: StaticImageData, galleryTablet3: StaticImageData, galleryDesktop1: StaticImageData, galleryDesktop2: StaticImageData, galleryDesktop3: StaticImageData }) {
+type Props = {
+    productMobile: StaticImageData, productTablet: StaticImageData, productDesktop: StaticImageData, newProduct: boolean, product: string, category: string, details: string, price: number, featuresp1: string, featuresp2: string, galleryMobile1: StaticImageData, galleryMobile2: StaticImageData, galleryMobile3: StaticImageData, galleryTablet1: StaticImageData, galleryTablet2: StaticImageData, galleryTablet3: StaticImageData, galleryDesktop1: StaticImageData, galleryDesktop2: StaticImageData, galleryDesktop3: StaticImageData
+}
+
+export default function ProductDetail({ productMobile, productTablet, productDesktop, newProduct, product, category, details, price, featuresp1, featuresp2, galleryMobile1, galleryMobile2, galleryMobile3, galleryTablet1, galleryTablet2, galleryTablet3, galleryDesktop1, galleryDesktop2, galleryDesktop3 }: Props) {
 
 
 
@@ -33,7 +37,7 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                             {newProduct ? (<p className="text-primary text-[.875rem] tracking-[.625rem] uppercase font-normal sm:mb-4">new product</p>) : null}
                             <h1 className="text-black text-[1.75rem] sm:text-[2.5rem] sm:leading-[2.75rem] font-bold tracking-[.0625rem] sm:tracking-[0.08931rem] uppercase">{product}<br />{category}</h1>
                             <p className="text-black text-[.9375rem] font-medium leading-[1.5625rem ] opacity-50 sm:mt-8">{details}</p>
-                            <p className="text-black font-bold text-[1.125rem] tracking-[0.08038rem] uppercase ">₦ {Price(price)}</p>
+                            <p className="text-black font-bold text-[1.125rem] tracking-[0.08038rem] uppercase ">₦ {Price(price, true)}</p>
                             <ProductInteraction />
                         </div>
                     </section>
@@ -102,8 +106,8 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                         </div>
                     </section>
 
-                    <section className="flex gap-5 max-sm:flex-col items-center">
-                        <div className="flex flex-col gap-5 sm:w-1/2">
+                    <section className="grid gap-5 sm:grid-cols-2 w-full">
+                        <div className="flex flex-col gap-5 w-full ">
                             {/* Image 1 */}
                             <Image
                                 src={galleryMobile1}
@@ -116,7 +120,7 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                             <Image
                                 src={galleryDesktop1}
                                 alt=""
-                                className="max-lg:hidden rounded-lg" />
+                                className="max-lg:hidden rounded-lg object-cover w-full" />
                             {/* Image 2 */}
                             <Image
                                 src={galleryMobile2}
@@ -125,11 +129,11 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                             <Image
                                 src={galleryTablet2}
                                 alt=""
-                                className="max-sm:hidden lg:hidden rounded-lg" />
+                                className="max-sm:hidden lg:hidden rounded-lg " />
                             <Image
                                 src={galleryDesktop2}
                                 alt=""
-                                className="max-lg:hidden rounded-lg" />
+                                className="max-lg:hidden rounded-lg object-cover w-full" />
                         </div>
                         {/* Image 3 */}
                         <Image
@@ -139,18 +143,18 @@ export default function ProductDetail({ productMobile, productTablet, productDes
                         <Image
                             src={galleryTablet3}
                             alt=""
-                            className="max-sm:hidden lg:hidden rounded-lg w-1/2" />
+                            className="max-sm:hidden lg:hidden rounded-lg h-full object-cover" />
                         <Image
                             src={galleryDesktop3}
                             alt=""
-                            className="max-lg:hidden rounded-lg" />
+                            className="max-lg:hidden rounded-lg h-full object-cover" />
                     </section>
 
 
                 </div>
 
             </div >
-            <Recommend />
+
             <ImageLinks />
         </>
     )

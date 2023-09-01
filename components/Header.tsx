@@ -72,7 +72,8 @@ export default function Header() {
                             </ul>
                         </nav>
                         <motion.button whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 1.1 }} className='ml-auto'>
+                            whileTap={{ scale: 1.1 }} className='ml-auto relative'>
+                            <div className='absolute -top-2 -right-2 shadow-sm bg-primary w-4 aspect-square rounded-full text-[.6rem] font-semibold grid place-content-center '>3</div>
                             <Image src={Cart} alt='cart' />
                         </motion.button>
                     </div >

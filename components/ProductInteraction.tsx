@@ -19,9 +19,9 @@ export default function ProductInteraction() {
     return (
         <div className="flex gap-4">
             <div className="flex gap-5 p-[0.94rem] bg-light text-black uppercase font-bold text-[0.8125rem] tracking-[.0625rem]">
-                <button className="opacity-25" onClick={add}>+</button>
+                <button className="opacity-25 hover:text-primary" onClick={add}>+</button>
                 <p>{count}</p>
-                <button className="opacity-25" onClick={subtract}>-</button>
+                <button className="opacity-25 hover:text-primary" onClick={subtract}>-</button>
             </div>
             <button className="primary-btn">add to cart</button>
         </div>
