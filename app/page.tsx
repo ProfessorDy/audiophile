@@ -47,7 +47,7 @@ export default function Home() {
             <div className='text-white max-lg:text-center  mt-8 sm:mt-16'>
               <h2 className='text-4xl sm:text-[3.5rem] font-bold sm:leading-[3.625rem] tracking-[0.08038rem] sm:tracking-[0.125rem] uppercase'>zx9<br />speaker</h2>
               <p className='mt-6 text-[0.9375rem] font-medium leading-[1.5625rem] opacity-75 max-w-[21.8125rem] max-lg:mx-auto '>Upgrade to premium speakers that are <br /> phenomenally built to deliver truly remarkable sound.</p>
-              <Link href='/speakers#zx9' className="secondary-btn max-lg:mx-auto mt-6 sm:mt-10">see product</Link>
+              <Link href='/speakers/zx9' className="secondary-btn max-lg:mx-auto mt-6 sm:mt-10">see product</Link>
             </div>
 
 
@@ -58,7 +58,7 @@ export default function Home() {
 
             <div className='space-y-8 '>
               <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]'>zx7 speaker</h2>
-              <Link href='/speakers#zx7' className='secondary-btn-inverted'>see product</Link>
+              <Link href='/speakers/zx7' className='secondary-btn-inverted'>see product</Link>
             </div>
 
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
 
             <div className='rounded-lg px-6 lg:px-24  py-[2.56rem]  sm:py-[6.31rem] bg-light space-y-8'>
               <h2 className='uppercase text-black text-[1.75rem] font-bold tracking-[0.125rem]'>yx1 earphones</h2>
-              <Link href='/earphones#yx1' className='secondary-btn-inverted'>see product</Link>
+              <Link href='/earphones/yx1' className='secondary-btn-inverted'>see product</Link>
             </div>
           </div>
         </section>
