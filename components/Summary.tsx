@@ -5,7 +5,7 @@ import SummaryDesktop from '@/public/shared/desktop/image-best-gear.jpg'
 
 export default function Summary() {
     return (
-        <section className="padding-x py-[7.5rem] sm:pt-0 sm:pb-24 ">
+        <section className="padding-x py-[7.5rem]  sm:pb-24 ">
             <div className="wrapper flex max-lg:flex-col gap-10 sm:gap-14 lg:gap-0 lg:justify-between lg:flex-row-reverse lg:items-center ">
 
                 {/* Images  */}

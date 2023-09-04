@@ -22,7 +22,7 @@ export default function Home() {
     <main className="">
       <Hero />
 
-      <section className="padding-x lg:pb-[12.5rem]  bg-very-light min-h-screen">
+      <section className="padding-x bg-very-light min-h-screen">
         <ImageLinks />
 
         <section className="wrapper space-y-4 sm:space-y-8 lg:space-y-16">
@@ -64,21 +64,21 @@ export default function Home() {
           </div>
 
           {/* YX1 EARPHONES */}
-          <div className='grid gap-6 sm:grid-cols-2 sm:gap-[0.69rem] lg:gap-[1.88rem]'>
+          <div className='grid gap-4 sm:grid-cols-2 sm:gap-8 lg:gap-[1.88rem]'>
             <Image
               src={yx1EarphonesMobile}
               alt='yx1 Earphone'
-              className='sm:hidden rounded-lg'
+              className='sm:hidden rounded-lg h-full object-cover'
             />
             <Image
               src={yx1EarphonesTablet}
               alt='yx1 Earphone'
-              className='max-sm:hidden lg:hidden'
+              className='max-sm:hidden lg:hidden rounded-lg h-full object-cover'
             />
             <Image
               src={yx1EarphonesDesktop}
               alt='yx1 Earphone'
-              className='max-lg:hidden'
+              className='max-lg:hidden rounded-lg h-full object-cover'
             />
 
             <div className='rounded-lg px-6 lg:px-24  py-[2.56rem]  sm:py-[6.31rem] bg-light space-y-8'>
