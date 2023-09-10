@@ -64,7 +64,7 @@ export default function Home() {
           </div>
 
           {/* YX1 EARPHONES */}
-          <div className='grid gap-4 sm:grid-cols-2 sm:gap-8 lg:gap-[1.88rem]'>
+          <div className='grid gap-4 sm:grid-cols-2 sm:gap-[.675rem] lg:gap-[1.88rem]'>
             <Image
               src={yx1EarphonesMobile}
               alt='yx1 Earphone'

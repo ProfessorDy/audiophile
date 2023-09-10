@@ -1,7 +1,7 @@
 'use client'
 
+
 import ImageLink from './ImageLink'
-import Hero from './Hero'
 
 import Hamburger from '@/public/shared/mobile/icon-hamburger.svg'
 import Logo from '@/public/shared/desktop/logo.svg'
@@ -74,7 +74,9 @@ export default function Header() {
                         <motion.button whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 1.1 }} className='ml-auto relative'>
                             <div className='absolute -top-2 -right-2 shadow-sm bg-primary w-4 aspect-square rounded-full text-[.6rem] font-semibold grid place-content-center '>3</div>
-                            <Image src={Cart} alt='cart' />
+                            <Link href={currentRoute + "?showDialog=y"} scroll={false}>
+                                <Image src={Cart} alt='cart' />
+                            </Link>
                         </motion.button>
                     </div >
                     <hr className='h-px bg-white opacity-10 mt-8 lg:mt-9' />

@@ -5,6 +5,7 @@ import { Manrope } from 'next/font/google'
 import Footer from '@/components/Footer'
 import Summary from '@/components/Summary'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
+import Dialog from '@/components/Dialog'
 
 const manrope = Manrope({ subsets: ['latin'] })
 
@@ -18,12 +19,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html lang="en">
       <body className={manrope.className}>
+        <Dialog />
         <Header />
         {children}
-        { }
         <Summary />
         <Footer />
         <ScrollToTopButton />
