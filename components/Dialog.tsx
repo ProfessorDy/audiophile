@@ -17,25 +17,24 @@ export default function Dialog() {
 
     const dialog: JSX.Element | null = showDialog === 'y'
         ? (
-            <dialog ref={dialogRef} className=" backdrop:bg-black/40 rounded-lg wrapper max-w-[23.5625rem] sm:ml-auto bg-white py-8 px-7 space-y-8">
-
-
-                <header>
-                    <h1>cart</h1>
-                    <button>Remove all</button>
-                </header>
-                <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nesciunt temporibus possimus asperiores in, repellendus distinctio dicta enim. Labore laborum iusto saepe facilis, earum sed deleniti error fugit illo incidunt.
-
-                </section>
-                <footer className="space-y-6">
-                    <div>total ()</div>
-                    <button className="w-full primary-btn"
-                    >Checkout</button>
-                </footer>
-
-
-
-            </dialog>
+            <div className="relative">
+                <dialog ref={dialogRef} className="backdrop:bg-black/40 rounded-lg wrapper w-full max-w-[23.5625rem] sm:ml-auto bg-white py-8 px-7 space-y-8">
+                    <header className="flex justify-between items-center">
+                        <h1 className="uppercase text-[1.125rem] font-bold tracking-[0.08038rem] ">cart (3)</h1>
+                        <button className="text-[.9375rem] font-medium leading-[1.5625rem] underline opacity-50">Remove all</button>
+                    </header>
+                    <section className="space-y-6">
+                    </section>
+                    <footer className="space-y-6">
+                        <div className="flex justify-between items-center">
+                            <p className="text-[.9375rem] font-medium leading-[1.5625rem] opacity-50 uppercase">total </p>
+                            <p className="text-[1.125rem] font-bold">price</p>
+                        </div>
+                        <button className="w-full primary-btn"
+                        >Checkout</button>
+                    </footer>
+                </dialog>
+            </div>
         )
         : null
 
